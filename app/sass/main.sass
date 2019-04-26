@@ -1,0 +1,178 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+// Пользовательские стили
+
+section 
+	width: 100vw
+	height: 100vh
+	overflow: hidden
+
+body 
+	user-select: none
+
+.bodybg
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: #ffb60f
+	background: radial-gradient(at 15% 60%, #c6735f, #52024d)
+	padding: 20px
+
+.figleft 
+	position: fixed
+	margin: 0
+	background-repeat: no-repeat !important
+	height: 100%
+	top: 0
+	z-index: 10
+
+.fg1
+	width: 100%
+	background-size: cover !important
+	background: url(..\img\1.png)
+	z-index: 11
+	
+.fg2
+	width: 100%
+	background-size: contain !important
+	background: url(..\img\8.png)
+	z-index: 14
+
+.fg3
+	width: 100%
+	background-size: contain !important
+	background: url(..\img\6.png)
+	z-index: 13
+
+.fg4
+	width: 100%
+	background-size: contain !important
+	background: url(..\img\4.png)
+	z-index: 12
+
+.figright 
+	position: fixed
+	margin: 0
+	background-position: right !important
+	background-repeat: no-repeat !important
+	height: 100%
+	top: 0
+	right: 0
+	z-index: 10
+
+.fg5
+	width: 100%
+	background-size: contain !important
+	background: url(..\img\5.png)
+	z-index: 15
+
+.fg6
+	width: 100%
+	background-size: contain !important
+	background: url(..\img\10.png)
+	z-index: 16
+
+.centertext
+	position: absolute
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: row
+	width: 90vw
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+	z-index: 14
+	img
+		position: relative
+		&:nth-child(1)
+			width: 13vw
+
+.location
+	width: 60vw
+
+.iphone
+	position: absolute
+	right: 25vw
+	top: 50%
+	width: 15vw
+	transform: translateY(-50%)
+	z-index: 20
+	img 
+		width: 100%
+
+.kruchok
+	position: relative
+	display: flex
+	align-items: center
+	flex-direction: column
+	width: 13vw
+	img 
+		width: 100%
+
+.party
+	transform: translateY(-30%)
+
+.toplefttext
+	font-family: Futura
+	position: fixed
+	top: 5vh
+	left: 5vw
+	color: white
+	font-size: 1.5vw
+	z-index: 21
+
+.toprighttext
+	font-family: Futura
+	position: fixed
+	top: 5vh
+	right: 5vw
+	color: white
+	font-size: 1.5vw
+	z-index: 21
+
+.bottext
+	font-family: Rex
+	position: fixed
+	top: 85vh
+	left: 5vw
+	color: white
+	font-size: 1.5vw
+	z-index: 21
+
+.botrimg
+	position: fixed
+	top: 87vh
+	right: 7vw
+	z-index: 21
+	transition: 1s
+	&:hover		
+		.kryzhok
+			background-color: #52024d
+			transition-delay: 0.3s
+		.fas
+			transform: translateX(50%)
+
+.kryzhok
+	position: relative
+	height: 7vh
+	width: 7vh
+	background-color: #ffb60f
+	border-radius:  300px
+	transition: 1s
+
+.botrimg .fas
+	position: relative
+	font-size: 7.5vh
+	color: white
+	bottom: 7vh
+	right: 40%
+	transition: 1s
+
+
+@import "media" // Всегда в конце
